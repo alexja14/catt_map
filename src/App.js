@@ -22,15 +22,6 @@ L.Icon.Default.mergeOptions({
 // Coordinate centro campus Cattolica Milano - Largo Gemelli
 const CENTER = [45.4635, 9.1895];
 
-// Bounds per l'immagine statica
-const IMAGE_BOUNDS = [
-  [45.4615, 9.1855],  // Sud-Ovest
-  [45.4655, 9.1935]   // Nord-Est
-];
-
-// Invece di immagine statica, usiamo TileLayer con caching aggressivo
-const USE_STATIC_IMAGE = false;
-
 // Edifici con coordinate precise
 const edifici = [
   {
