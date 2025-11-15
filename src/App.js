@@ -716,15 +716,6 @@ function App() {
             preferCanvas={true}
             updateWhenIdle={true}
             updateWhenZooming={false}
-            whenReady={(map) => {
-              // Disabilita tutti i movimenti della mappa
-              map.target.dragging.disable();
-              map.target.touchZoom.disable();
-              map.target.doubleClickZoom.disable();
-              map.target.scrollWheelZoom.enable(); // Solo zoom con scroll
-              map.target.boxZoom.disable();
-              map.target.keyboard.disable();
-            }}
           >
             {/* Tiles con caching molto aggressivo */}
             <TileLayer
